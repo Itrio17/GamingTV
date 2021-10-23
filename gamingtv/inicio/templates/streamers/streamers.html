@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/scss/dota.css">
+    <title>Gaming TV</title>
+</head>
+<body>
+
+    <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="/static/icons/tvGaming.png" width="30" height="30">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="{% url 'catalogo'%}">
+                    Catálogo
+                </a>
+            </div>
+
+            <div>
+                <input class="input mt-2" type="text" placeholder="Quieres ver algo?" style="width: 800px">
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary is-light is-outlined"> {{ user.username }} </a>
+                        <a class="button is-danger" id="logout" href="/logout/">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="backImg">
+        <img src="/static/images/neon-background-wallpaper.jpg" alt="" class="back">
+    </div>
+
+
+    <h1>DOTA</h1>
+
+    <section class="liveStreams">
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <a><h4>Titulo del Streaming</h4></a>
+                        <a><p>Streamer</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="{% url 'streamingroom'%}">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/Reven.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+                <div class="liveImg">
+                    <img src="/static/icons/live.png" alt="liveImg" >
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/Reven.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+</body>
+</html>

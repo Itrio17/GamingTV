@@ -1,0 +1,316 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href={% static 'scss/catalogo.css' %}>
+    <title>Gaming TV</title>
+</head>
+
+<body>
+    <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="/static/icons/tvGaming.png" width="30" height="30">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="{% url 'catalogo' %}">
+                    Catálogo
+                </a>
+            </div>
+
+            <div>
+                <input class="input mt-2" type="text" placeholder="Quieres ver algo?" style="width: 800px">
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary is-light is-outlined"> {{ user.username }} </a>
+                        <a class="button is-danger" id="logout" href="/logout/">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="backImg">
+        <img src="/static/images/neon-background-wallpaper.jpg" alt="" class="back">
+    </div>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-angle-double-right" id="cancel"></i>
+    </label>
+    
+    <div class="sidebar">
+        <header>Nevbar</header><br>
+        <ul>
+            <li><a href="#"><i class="fas fa-house-user"></i>Suscripciones</a></li>
+            <li><a href="#"><i class="fas fa-user-secret"></i>Novedades</a></li>
+            <li><a href="#"><i class="fas fa-address-card"></i>Mi canal</a></li>
+            <li><a href="#"><i class="fas fa-copyright"></i>Ajustes</a></li>
+            <li><a href="#"><i class="fas fa-share-alt-square"></i>Acerca de</a></li>
+        </ul>
+    </div>
+
+    <section class="catalogo" id="move">
+        <a href="{% url 'streamers'%}" class="cardButton" id="btn">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/dota.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Apex_Legends.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/fall_guys.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/fornite.webp" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Gearsofwar.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/halo.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Lol.jpeg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/minecraft.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Pokemon_Unite.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/resident-evil-dbd.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/super-mario-maker.jpeg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/truck_simulator.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/warzone.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Age_of_empires.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/AmongUs.png" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/fifa_19.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Genshin_Impact.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/GTA5.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Heathstone.jpeg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/PUBg.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+
+        <a class="cardButton" href="{% url 'streamers'%}">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="/static/Games/Rocket_ League.jpg" alt="Dota">
+                    </figure>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <script>
+        const btn = document.getElementById("cancel");
+        const makeWay = document.getElementById("move")
+
+        btn.addEventListener("click", function () {
+            makeWay.style.margin = "70px 0 70px 220px"
+
+        btn.addEventListener("click", function () {
+            makeWay.style.margin = "70px"
+        })
+        });
+    </script>
+
+    <script>
+        let arrayElements = document.getElementsByClassName("cardButton");
+        for(let element of arrayElements) {
+            element.addEventListener("mouseover", function() {
+                element.classList.replace("cardButton", "cardButton-2");
+            });
+            element.addEventListener("click", function() {
+                console.log("hiciste click");
+            });
+        };
+
+        for(let element of arrayElements) {
+            element.addEventListener("mouseout", function() {
+                element.classList.replace("cardButton-2", "cardButton");
+            });
+        };
+    </script>
+</body>
