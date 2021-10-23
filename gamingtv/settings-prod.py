@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 ASGI_APPLICATION = "gamingtv.asgi.application"
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 SASS_PROCESSOR_ROOT = STATIC_ROOT
 
 STATICFILES_FINDERS = [
