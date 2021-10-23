@@ -1,0 +1,12 @@
+{
+    "cSpell.enableFiletypes": [
+        "!git-commit",
+        "!graphql",
+        "!html",
+        "!javascript",
+        "!jupyter",
+        "!latex",
+        "!python",
+        "!scss"
+    ]
+}
